@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/eventListener.xsd">
+	<import>
+		<eventlistener name="jCoinsLexiconEntryAction">
+			<eventclassname>lexicon\data\entry\EntryAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<listenerclassname>lexicon\system\event\listener\JCoinsLexiconListener</listenerclassname>
+		</eventlistener>
+		
+		<eventlistener name="jCoinsLexiconEntryAdd">
+			<eventclassname>lexicon\form\EntryAddForm</eventclassname>
+			<eventname>readParameters</eventname>
+			<listenerclassname>lexicon\system\event\listener\JCoinsLexiconAddFormListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="jCoinsLexiconEntryEdit">
+			<eventclassname>lexicon\form\EntryEditForm</eventclassname>
+			<eventname>readParameters</eventname>
+			<listenerclassname>lexicon\system\event\listener\JCoinsLexiconEditFormListener</listenerclassname>
+		</eventlistener>
+	</import>
+</data>

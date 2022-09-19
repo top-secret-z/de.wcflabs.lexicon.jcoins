@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/language.xsd" languagecode="de" languagename="Deutsch" countrycode="de">
+	<category name="wcf.jcoins.statement">
+		<item name="wcf.jcoins.statement.title.de.wcflabs.jcoins.statement.lexicon.entry"><![CDATA[Lexikon-Eintrag]]></item>
+		<item name="wcf.jcoins.statement.title.retractable.de.wcflabs.jcoins.statement.lexicon.entry"><![CDATA[Lexikon-Eintrag gelöscht]]></item>
+		<item name="wcf.jcoins.statement.reason.de.wcflabs.jcoins.statement.lexicon.entry"><![CDATA[{if $statement->getObject()->getTitle()}{if LANGUAGE_USE_INFORMAL_VARIANT}Dein{else}Ihr{/if} Lexikon-Eintrag „{$statement->getObject()->getTitle()}“ wurde veröffentlicht.{else}Ein Lexikon-Eintrag von {if LANGUAGE_USE_INFORMAL_VARIANT}dir{else}Ihnen{/if} wurde veröffentlicht, der mittlerweile gelöscht ist.{/if}]]></item>
+		<item name="wcf.jcoins.statement.reason.reverse.de.wcflabs.jcoins.statement.lexicon.entry"><![CDATA[{if $statement->getObject()->getTitle()}{if LANGUAGE_USE_INFORMAL_VARIANT}Dein{else}Ihr{/if} Lexikon-Eintrag „{$statement->getObject()->getTitle()}“ wurde gelöscht oder deaktiviert.{else}Ein Lexikon-Eintrag von {if LANGUAGE_USE_INFORMAL_VARIANT}dir{else}Ihnen{/if} wurde gelöscht.{/if}]]></item>
+		
+		<item name="wcf.jcoins.statement.title.de.wcflabs.jcoins.statement.lexicon.version"><![CDATA[Lexikon-Eintrag Version]]></item>
+		<item name="wcf.jcoins.statement.reason.de.wcflabs.jcoins.statement.lexicon.version"><![CDATA[{if $statement->getObject()->getTitle()}{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} den Lexikon-Eintrag „{$statement->getObject()->getTitle()}“ bearbeitet.{else}{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} einen Lexikon-Eintrag bearbeitet, der mittlerweile gelöscht ist.{/if}]]></item>
+		
+		<!-- wcf.jcoins.statement.category -->
+		<item name="wcf.jcoins.statement.category.de.wcflabs.jcoins.lexicon"><![CDATA[VieCode Lexikon]]></item>
+	</category>
+</language>

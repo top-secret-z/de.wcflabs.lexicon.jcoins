@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/language.xsd" languagecode="en" languagename="English" countrycode="en">
+	<category name="wcf.jcoins.statement">
+		<item name="wcf.jcoins.statement.title.de.wcflabs.jcoins.statement.lexicon.entry"><![CDATA[Lexicon Entry]]></item>
+		<item name="wcf.jcoins.statement.title.retractable.de.wcflabs.jcoins.statement.lexicon.entry"><![CDATA[Lexicon Entry deleted]]></item>
+		<item name="wcf.jcoins.statement.reason.de.wcflabs.jcoins.statement.lexicon.entry"><![CDATA[{if $statement->getObject()->getTitle()}Your Lexicon entry “{$statement->getObject()->getTitle()}” was published.{else}A Lexicon entry of yours was published, which was deleted in the meantime.{/if}]]></item>
+		<item name="wcf.jcoins.statement.reason.reverse.de.wcflabs.jcoins.statement.lexicon.entry"><![CDATA[{if $statement->getObject()->getTitle()}Your Lexicon entry “{$statement->getObject()->getTitle()}” was deleted or disabled.{else}A Lexicon entry of yours was deleted.{/if}]]></item>
+		
+		<item name="wcf.jcoins.statement.title.de.wcflabs.jcoins.statement.lexicon.version"><![CDATA[Lexicon Entry Version]]></item>
+		<item name="wcf.jcoins.statement.reason.de.wcflabs.jcoins.statement.lexicon.version"><![CDATA[{if $statement->getObject()->getTitle()}You created a version for the Lexicon entry “{$statement->getObject()->getTitle()}”.{else}You created a version for a Lexicon entry, which was deleted in the meantime.{/if}]]></item>
+		
+		<!-- wcf.jcoins.statement.category -->
+		<item name="wcf.jcoins.statement.category.de.wcflabs.jcoins.lexicon"><![CDATA[VieCode Lexicon]]></item>
+	</category>
+</language>
