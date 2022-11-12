@@ -1,47 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package name="de.wcflabs.lexicon.jcoins" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/package.xsd">
-	<packageinformation>
-		<packagename>JCoins - VieCode Lexicon Extension</packagename>
-		<packagedescription>Adds VieCode Lexicon functions to JCoins.</packagedescription>
-		<packagename language="de">JCoins - VieCode Lexikon-Erweiterung</packagename>
-		<packagedescription language="de">Ergänzt JCoins um VieCode Lexikon-Funktionen.</packagedescription>
-		<version>5.5.0</version>
-		<date>2022-05-30</date>
-	</packageinformation>
-	
-	<authorinformation>
-		<author>Zaydowicz</author>
-	</authorinformation>
-	
-	<requiredpackages>
-		<requiredpackage minversion="5.3.0">com.woltlab.wcf</requiredpackage>
-		<requiredpackage minversion="7.0.0">com.viecode.lexicon</requiredpackage>
-		<requiredpackage minversion="5.3.0">de.wcflabs.wcf.jcoins</requiredpackage>
-	</requiredpackages>
-	
-	<excludedpackages>
-		<excludedpackage version="5.6.0 Alpha 1">com.woltlab.wcf</excludedpackage>
-	</excludedpackages>
-	
-	<instructions type="install">
-		<instruction type="file" application="lexicon">files.tar</instruction>
-		<instruction type="eventListener">eventListener.xml</instruction>
-		<instruction type="objectType">objectType.xml</instruction>
-		<instruction type="language">language/*.xml</instruction>
-	</instructions>
-	
-	<instructions type="update" fromversion="5.2.*">
-		<instruction type="file" application="lexicon">files.tar</instruction>
-		<instruction type="language">language/*.xml</instruction>
-	</instructions>
-	
-	<instructions type="update" fromversion="5.3.*">
-		<instruction type="file" application="lexicon">files.tar</instruction>
-		<instruction type="language">language/*.xml</instruction>
-	</instructions>
-	
-	<instructions type="update" fromversion="5.4.*">
-		<instruction type="file" application="lexicon">files.tar</instruction>
-		<instruction type="language">language/*.xml</instruction>
-	</instructions>
+<package name="de.softcreatr.lexicon.jcoins" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com https://www.woltlab.com/XSD/2019/package.xsd">
+    <packageinformation>
+        <packagename>JCoins - VieCode Lexicon Extension</packagename>
+        <packagedescription>Adds VieCode Lexicon functions to JCoins.</packagedescription>
+        <packagename language="de">JCoins - VieCode Lexikon-Erweiterung</packagename>
+        <packagedescription language="de">Ergänzt JCoins um VieCode Lexikon-Funktionen.</packagedescription>
+        <version>5.5.1</version>
+        <date>2022-09-18</date>
+        <license><![CDATA[LGPL <https://opensource.org/licenses/lgpl-license.php>]]></license>
+    </packageinformation>
+
+    <authorinformation>
+        <author><![CDATA[SoftCreatR.dev]]></author>
+        <authorurl><![CDATA[https://softcreatr.dev]]></authorurl>
+    </authorinformation>
+
+    <requiredpackages>
+        <requiredpackage minversion="5.3.0">com.woltlab.wcf</requiredpackage>
+        <requiredpackage minversion="7.0.0">com.viecode.lexicon</requiredpackage>
+        <requiredpackage minversion="5.3.0">de.softcreatr.wcf.jcoins</requiredpackage>
+    </requiredpackages>
+
+    <excludedpackages>
+        <excludedpackage version="5.6.0 Alpha 1">com.woltlab.wcf</excludedpackage>
+        <excludedpackage version="*">de.wcflabs.lexicon.jcoins</excludedpackage>
+    </excludedpackages>
+
+    <instructions type="install">
+        <instruction type="file" application="lexicon" />
+        <instruction type="eventListener" />
+        <instruction type="objectType" />
+        <instruction type="language" />
+    </instructions>
+
+    <instructions type="update" fromversion="5.2.*">
+        <instruction type="file" application="lexicon" />
+        <instruction type="language" />
+    </instructions>
+
+    <instructions type="update" fromversion="5.3.*">
+        <instruction type="file" application="lexicon" />
+        <instruction type="language" />
+    </instructions>
+
+    <instructions type="update" fromversion="5.4.*">
+        <instruction type="file" application="lexicon" />
+        <instruction type="language" />
+    </instructions>
+
+    <instructions type="update" fromversion="5.5.0">
+        <instruction type="file" application="lexicon" />
+        <instruction type="eventListener" />
+        <instruction type="objectType" />
+        <instruction type="language" />
+    </instructions>
 </package>
